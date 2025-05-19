@@ -14,7 +14,7 @@ It performs the following:
 $ katana -u http://testphp.vulnweb.com -aff -j katana.jsonl
 $ python3 hidden-param-extractor.py
 ```
-Using a URL list for security testing can be painful as there are a lot of URLs that have uninteresting/duplicate content; uro aims to solve that.
+Using a URL list for security testing can be painful as there are a lot of URLs that have uninteresting/duplicate content; [uro](https://github.com/s0md3v/uro) aims to solve that.
 ```
 uro -i katana_hidden_params_fuzzing.txt -o katana_urls_with_hidden_params.txt
 ```
