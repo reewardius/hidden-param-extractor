@@ -12,5 +12,5 @@ It performs the following:
 - Useful for bug bounty hunters and web security testers who want to fuzz endpoints with auto-discovered hidden parameters.
 ```
 $ katana -u http://testphp.vulnweb.com -aff -j katana.jsonl
-$ python3 hidden-param-extractor.py
+$ python3 hidden-param-extractor.py && uro -i katana_hidden_params_fuzzing -o katana_urls_with_hidden_params.txt
 ```
