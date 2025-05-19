@@ -1,6 +1,6 @@
 ## 🔍 Katana Hidden Parameter Extractor
 
-This Python script is designed to extract hidden input parameters from HTML responses found in `katana.jsonl` output (produced by [projectdiscovery/katana]([url](https://github.com/projectdiscovery/katana))).
+This Python script is designed to extract hidden input parameters from HTML responses found in `katana.jsonl` output produced by [projectdiscovery/katana](https://github.com/projectdiscovery/katana).
 
 It performs the following:
 
