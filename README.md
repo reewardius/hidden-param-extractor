@@ -18,3 +18,15 @@ Using a URL list for security testing can be painful as there are a lot of URLs 
 ```
 uro -i katana_hidden_params_fuzzing.txt -o katana_urls_with_hidden_params.txt
 ```
+---
+#### 🚀 Nuclei DAST Scan Setup
+
+##### 1. Clone Fast Templates Repository:
+```
+git clone https://github.com/reewardius/nuclei-fast-templates
+```
+##### 2. Run the DAST Scan:
+Make sure you have `nuclei` installed. Then run the following command to perform a scan using the DAST templates:
+```
+nuclei -l katana_urls_with_hidden_params.txt -t nuclei-fast-templates/ -dast -etags fuzzing-req-header,fuzzing-req-cookie,fuzzing-req-path
+```
