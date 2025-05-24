@@ -28,5 +28,5 @@ git clone https://github.com/reewardius/nuclei-fast-templates
 ##### 2. Run the DAST Scan:
 Make sure you have `nuclei` installed. Then run the following command to perform a scan using the DAST templates:
 ```
-nuclei -l katana_urls_with_hidden_params.txt -t nuclei-fast-templates/ -dast -etags fuzzing-req-header,fuzzing-req-cookie,fuzzing-req-path
+nuclei -l katana_urls_with_hidden_params.txt -tags fuzzing-req -dast -t nuclei-fast-templates/
 ```
