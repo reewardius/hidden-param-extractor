@@ -51,5 +51,5 @@ arjun -i katana_links_with_extensions.txt -t 15 -oT arjun_results.txt && uro -i 
 
 Use the discovered parameterized URLs to perform a dynamic scan with Nuclei:
 ```bash
-nuclei -l arjun.txt -tags fuzzing-req -dast -t nuclei-fast-templates/ -o arjun_params_dast_results.txt
+nuclei -l arjun.txt -tags fuzzing-req -dast -t nuclei-fast-templates/ -fuzz-param-frequency 10000 -o arjun_params_dast_results.txt
 ```
