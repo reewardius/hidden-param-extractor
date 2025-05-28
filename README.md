@@ -28,7 +28,7 @@ git clone https://github.com/reewardius/nuclei-fast-templates
 ##### 2. Run the DAST Scan using Nuclei:
 Make sure you have `nuclei` installed. Then run the following command to perform a scan using the DAST templates:
 ```bash
-nuclei -l katana_urls_with_hidden_params.txt -tags fuzzing-req -dast -t nuclei-fast-templates/ -o hidden_params_dast_results.txt
+nuclei -l katana_urls_with_hidden_params.txt -tags fuzzing-req -dast -t nuclei-fast-templates/ -fuzz-param-frequency 10000 -o hidden_params_dast_results.txt
 ```
 
 #### ✨ Arjun
